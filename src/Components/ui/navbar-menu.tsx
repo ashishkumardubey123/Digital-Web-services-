@@ -1,6 +1,6 @@
-"use client";
 import React from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 
 
@@ -11,7 +11,8 @@ const transition = {
   stiffness: 100,
   restDelta: 0.001,
   restSpeed: 0.001,
-};
+} as const;
+
 
 export const MenuItem = ({
   setActive,
@@ -24,21 +25,45 @@ export const MenuItem = ({
   item: string;
   children?: React.ReactNode;
 }) => {
+  const isActive = active === item;
+
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative ">
-      <motion.p
-        transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
-      >
+    <div
+      onMouseEnter={() => setActive(item)}
+      className="relative px-2"
+    >
+      {isActive && (
+        <motion.div
+          layoutId="navbar-hover"
+          transition={transition}
+        className="
+  absolute inset-0 
+  rounded-full 
+  px-6 py-3
+  bg-gradient-to-r 
+  from-indigo-500/30 via-purple-500/30 to-blue-500/30
+  backdrop-blur-xl 
+  border border-white/20 
+  shadow-lg
+"
+
+
+
+        />
+      )}
+
+      <motion.span className="relative z-10 cursor-pointer  py-2 text-lg font-bold  text-black dark:text-white">
         {item}
-      </motion.p>
+      </motion.span>
+
+
       {active !== null && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={transition}
         >
-          {active === item && (
+          {active === item && children && (
             <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
                 transition={transition}
@@ -90,13 +115,14 @@ export const ProductItem = ({
 }) => {
   return (
     <a href={href} className="flex space-x-2">
-      <img
-        src={src}
-        width={140}
-        height={70}
-        alt={title}
-        className="shrink-0 rounded-md shadow-2xl"
-      />
+ <Image
+  src={src}
+  width={140}
+  height={70}
+  alt={title}
+  className="shrink-0 rounded-md shadow-2xl"
+/>
+
       <div>
         <h4 className="text-xl font-bold mb-1 text-black dark:text-white">
           {title}
@@ -109,11 +135,11 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({ children, ...rest }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
   return (
     <a
       {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black "
+       className="block w-full text-neutral-700 dark:text-neutral-200 hover:text-black dark:hover:text-white"
     >
       {children}
     </a>
