@@ -1,7 +1,7 @@
-import HeroSection from "@/Components/HeroSection";
-import { main } from "motion/react-client";
+
+
 import Herosection from "@/Components/HeroSection";
-import Image from "next/image";
+
 import Our_services from "@/Components/Our_services";
 
 export default function Home() {
