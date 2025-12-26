@@ -4,7 +4,7 @@ import { BackgroundRippleEffect } from "@/Components/ui/background-ripple-effect
 import Link from "next/link";
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
-import { Button } from "./ui/moving-border";
+// import { Button } from "./ui/moving-border";
 import dynamic from "next/dynamic";
 import { ChevronRight, MoveRight } from "lucide-react";
 
