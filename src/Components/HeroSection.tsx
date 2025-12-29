@@ -1,93 +1,130 @@
 "use client";
-import { BackgroundRippleEffect } from "@/Components/ui/background-ripple-effect";
-
 import Link from "next/link";
 import React from "react";
-import { Spotlight } from "./ui/Spotlight";
 // import { Button } from "./ui/moving-border";
 import dynamic from "next/dynamic";
-import { ChevronRight, MoveRight } from "lucide-react";
+ 
+import { ChevronRight, MoveRight }  from "lucide-react";
+import Image from "next/image";
 
-const MaskContainer = dynamic(
-  () => import("@/Components/ui/svg-mask-effect").then((m) => m.MaskContainer),
-  { ssr: false }
-);
+
+
+// const MaskContainer = dynamic(
+//   () => import("@/Components/ui/svg-mask-effect").then((m) => m.MaskContainer),
+//   { ssr: false }
+// );
+
+ 
 
 function HeroSection() {
-  return (
-    <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
-      <BackgroundRippleEffect />
-      {/* Spotlight Effect */}
-      <Spotlight
-        className="-top-40 left-0 md:-top-20 md:left-60"
-        fill="white"
-      />
- 
-      {/* Hero Content */}
+  
+return (
+    <div className="relative">
+      
+      {/* Background Gradient Blur (ORIGINAL) */}
+      <div
+        className="absolute inset-0 blur-xl h-[580px]"
+        style={{
+          background:
+            "linear-gradient(143.6deg, rgba(192, 132, 252, 0) 20.79%, rgba(232, 121, 249, 0.26) 40.92%, rgba(204, 171, 238, 0) 70.35%)",
+        }}
+      ></div>
 
-      <div className="p-4 relative z-10  h-full w-full text-center">
-        <MaskContainer
-          revealText={
-            <div
-              className="flex flex-col mt-10 items-center justify-center
-            "
+      <section>
+        <div className="relative max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
+
+          {/* Left Content */}
+          <div className="flex-none space-y-5 max-w-xl">
+
+            {/* News Badge */}
+            <a
+              href="javascript:void(0)"
+              className="inline-flex gap-x-6 items-center rounded-full p-1 pr-6 border text-sm font-medium duration-150 hover:bg-white"
             >
-              <h1 className="mt-10 md:mt-10  text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-                Elevate Your Online Presence
-              </h1>
-
-              <p className="mt-5 font-normal text-2xl md:text-lg text-neutral-300 max-w-xl mx-auto">
-                Crafted to elevate your brand, attract the right audience, and
-                convert visitors into loyal customers with cutting-edge
-                technology and proven marketing tactics.
+              <span className="inline-block rounded-full px-3 py-1 bg-indigo-600 text-white">
+                News
+              </span>
+              <p className="flex items-center">
+                Read the launch post from here
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </p>
+            </a>
 
-              {/* CTA BUTTON — OUTSIDE MASK */}
-              <div className="relative; z-50 gap-5    mt-10 flex justify-center">
-                <Link href="/services">
-         <button className="
-  px-10 py-3
-  text-xl
-  flex items-center justify-center gap-2
-  rounded-full
-  bg-gradient-to-b from-blue-500 to-blue-950
-  text-white
-  focus:ring-2 focus:ring-blue-400
-  hover:scale-110 hover:shadow-xl
-  transition-transform duration-300 ease-out
-">
-  Get Started
-  <ChevronRight size={22} strokeWidth={1.5} />
-</button>
+            {/* Heading */}
+            <h1 className="text-4xl text-gray-800 font-extrabold sm:text-5xl">
+              Build your SaaS exactly how you want
+            </h1>
 
-                </Link>
+            {/* Description */}
+            <p>
+              Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
+              doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+            </p>
 
-                 
-                
-                <Link href="tel:+919876543210">
-             <button className="p-[3px] relative">
-  <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg"/>
-  <div className="px-8 py-2 flex items-center gap-1 bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-   Contact us. <span className="strokeWidth={1.5}  absoluteStrokeWidt "><MoveRight /> </span>
-  </div>
-</button> 
+            {/* Buttons */}
+            <div className="flex items-center gap-x-3 sm:text-sm">
+              <a
+                href="javascript:void(0)"
+                className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex"
+              >
+                Get started
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </a>
 
-                </Link>
-
-
-              </div>
+              <a
+                href="javascript:void(0)"
+                className="flex items-center justify-center gap-x-1 py-2 px-4 text-gray-700 hover:text-gray-900 font-medium duration-150 md:inline-flex"
+              >
+                Contact sales
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </a>
             </div>
-          }
-          className="  text-white dark:text-black"
-        >
-          With powerful web solutions{" "}
-          <span className="text-blue-500">And result-driven</span> Digital
-          marketing strategies.{" "}
-          <span className="bg-gradient-to-r text-bold from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent font-semibold">
-            And turn visitors into Loyal customers.
-          </span>
-        </MaskContainer>
-      </div>
+          </div>
+
+          {/* Right Image */}
+          <div className="flex-1 hidden md:block">
+            <img
+              src="https://raw.githubusercontent.com/sidiDev/remote-assets/c86a7ae02ac188442548f510b5393c04140515d7/undraw_progressive_app_m-9-ms_oftfv5.svg"
+              className="max-w-xl"
+              alt="Hero"
+            />
+          </div>
+
+        </div>
+      </section>
     </div>
   );
 }
