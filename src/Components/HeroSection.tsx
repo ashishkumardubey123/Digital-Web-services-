@@ -109,13 +109,16 @@ function HeroSection() {
           </div>
 
           {/* Right Image */}
-          <div className="flex-1 hidden md:block">
-            <img
-              src="https://raw.githubusercontent.com/sidiDev/remote-assets/c86a7ae02ac188442548f510b5393c04140515d7/undraw_progressive_app_m-9-ms_oftfv5.svg"
-              className="max-w-xl"
-              alt="Hero"
-            />
-          </div>
+         <div className="flex-1 hidden md:block">
+  <video
+    src="/hero.mp4"
+    className="max-w-xl rounded-xl bg-transparent"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+</div>
         </div>
       </section>
     </div>

@@ -237,11 +237,11 @@ export const NavbarLogo = () => {
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
      <img
-  src="../new-logo.png"
+  src="./Nav-logo.png"
   alt="logo"
-  width={40}
-  height={30}
-  className="rounded-full border border-gray-200 bg-white p-1 shadow-sm"
+  width={50}
+  height={50}
+  className="rounded-full border  p-1 "
 />
       <span className="font-medium text-black dark:text-white">Digital Web-Services</span>
     </a>
