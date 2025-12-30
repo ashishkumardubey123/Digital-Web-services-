@@ -7,8 +7,14 @@ import Our_services from "@/Components/Our_services";
 export default function Home() {
   return (
       
-<main className="min-h-screen bg-black/[0.96]g  antialiased  bg-grid-white/[0.02]">
-     
+<main
+  className="min-h-screen antialiased bg-grid-white/[0.02]"
+  style={{
+    background:
+      "linear-gradient(143.6deg, rgba(29, 78, 216, 0) 20.79%, rgba(29, 78, 216, 0.28) 40.92%, rgba(29, 78, 216, 0) 70.35%)",
+  }}
+>
+  
         <Herosection/>
         <Our_services/>
     
