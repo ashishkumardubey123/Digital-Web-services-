@@ -7,6 +7,7 @@ import Our_services from "@/Components/Our_services";
 export default function Home() {
   return (
       
+      
 <main
   className="min-h-screen font-satoshi antialiased bg-grid-white/[0.02]"
   style={{
