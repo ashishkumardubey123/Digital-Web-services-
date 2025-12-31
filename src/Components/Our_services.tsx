@@ -3,7 +3,7 @@
 
 import ourservices from "../data/services.json";
 import Link from "next/link";
-import { LucideIcon, ArrowBigRightDash, LaptopMinimal, Search, Instagram } from "lucide-react";
+import { LucideIcon, ArrowBigRightDash,  } from "lucide-react";
 import { Icon } from "@tabler/icons-react";
 import { BackgroundGradient } from "./ui/background-gradient";
 
