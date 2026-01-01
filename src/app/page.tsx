@@ -3,6 +3,7 @@
 import Herosection from "@/Components/HeroSection";
 
 import Our_services from "@/Components/Our_services";
+import StatsSection from "@/Components/StatsSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
 >
   
         <Herosection/>
+        <StatsSection/>
         <Our_services/>
     
  
