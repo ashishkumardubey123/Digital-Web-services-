@@ -76,7 +76,7 @@ function StatsSection() {
           >
             <h3 className="text-xl sm:text-3xl font-bold text-gray-900">
              
-              <span className=" text-4xl">
+              <span className=" text-xl sm:text-4xl ">
                 <NumberTicker
       value={5}
       
