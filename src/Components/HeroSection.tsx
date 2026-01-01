@@ -51,12 +51,18 @@ function HeroSection() {
   </Link>
 
   {/* Heading */}
+
+
+
+
+
+
   <div>
     <LayoutTextFlip
       text="We Deliver"
       words={[
         "High-Performing Websites",
-        "Scalable Digital Brands",
+        "Scalable-Digital-Brands",
         "Result-Driven Experiences",
         "Growth-Focused Solutions",
       ]}
@@ -69,28 +75,46 @@ function HeroSection() {
   </p>
 
   {/* Buttons */}
-  <div className="flex items-center gap-x-3 sm:text-sm">
+ {/* Buttons */}
+  <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-x-4">
     <Link href="/">
       <HoverBorderGradient
         containerClassName="rounded-full"
         as="button"
-        className="flex items-center justify-center gap-x-1 py-2 px-2 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex"
+        className="
+          flex items-center justify-center gap-x-1
+          px-4 py-2
+          text-sm sm:text-base
+          text-white font-medium
+          bg-gray-800
+          hover:bg-gray-700
+          active:bg-gray-900
+          rounded-full
+          transition
+        "
       >
         <span>Get Started</span>
-        <ChevronRight size={20} strokeWidth={2.5} absoluteStrokeWidth />
+        <ChevronRight size={18} strokeWidth={2.5} absoluteStrokeWidth />
       </HoverBorderGradient>
     </Link>
 
     <a
       href="javascript:void(0)"
-      className="flex items-center justify-center gap-x-1 py-2 px-4 text-gray-700 hover:text-gray-900 font-medium duration-150 md:inline-flex"
+      className="
+        flex items-center justify-center gap-x-1
+        px-4 py-2
+        text-sm sm:text-base
+        text-gray-700 hover:text-gray-900
+        font-medium
+        transition
+      "
     >
       Contact sales
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
         fill="currentColor"
-        className="w-5 h-5"
+        className="w-4 h-4 sm:w-5 sm:h-5"
       >
         <path
           fillRule="evenodd"
@@ -101,6 +125,9 @@ function HeroSection() {
     </a>
   </div>
 </motion.div>
+
+
+
 
 
     {/* Right Video */}
