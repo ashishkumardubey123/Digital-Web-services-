@@ -83,10 +83,10 @@ function StatsSection() {
     />
               </span>
               
-              +Years
+              +
             </h3>
             <p className="mt-1 text-[10px] sm:text-xl font-medium text-gray-900">
-              Experience
+             Years of Experience
             </p>
           </motion.div>
 
