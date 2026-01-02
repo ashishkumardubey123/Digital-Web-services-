@@ -4,7 +4,7 @@ import { NumberTicker} from "@/Components/ui/number-ticker"
 
 function StatsSection() {
   return (
-    <section className="relative z-10 py-4 sm:py-6">
+    <section className="relative z-10 py-4 sm:py-10">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

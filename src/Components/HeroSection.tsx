@@ -77,7 +77,7 @@ function HeroSection() {
   {/* Buttons */}
  {/* Buttons */}
   <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-x-4">
-    <Link href="/">
+ <Link href="/services">
       <HoverBorderGradient
         containerClassName="rounded-full"
         as="button"
@@ -98,8 +98,8 @@ function HeroSection() {
       </HoverBorderGradient>
     </Link>
 
-    <a
-      href="javascript:void(0)"
+    <Link
+      href="/contact"
       className="
         flex items-center justify-center gap-x-1
         px-4 py-2
@@ -109,7 +109,7 @@ function HeroSection() {
         transition
       "
     >
-      Contact sales
+      Contact Us
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
@@ -122,7 +122,7 @@ function HeroSection() {
           clipRule="evenodd"
         />
       </svg>
-    </a>
+    </Link>
   </div>
 </motion.div>
 

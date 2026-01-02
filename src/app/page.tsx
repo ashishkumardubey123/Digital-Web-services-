@@ -3,6 +3,8 @@
 import Herosection from "@/Components/HeroSection";
 
 import Our_services from "@/Components/Our_services";
+import ServicesSection from "@/Components/ServicesSection";
+
 import StatsSection from "@/Components/StatsSection";
 
 export default function Home() {
@@ -19,7 +21,8 @@ export default function Home() {
   
         <Herosection/>
         <StatsSection/>
-        <Our_services/>
+        {/* <Our_services/> */}
+        <ServicesSection/>
     
  
 </main>

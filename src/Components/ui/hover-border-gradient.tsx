@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import { motion } from "motion/react";
-import { cn } from "@/utils/cn";
+import { cn } from "@/utils/cn"
 
 type Direction = "TOP" | "LEFT" | "BOTTOM" | "RIGHT";
 
