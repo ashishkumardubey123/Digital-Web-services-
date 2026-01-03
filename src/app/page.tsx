@@ -1,11 +1,13 @@
 
 
 import Herosection from "@/Components/HeroSection";
+import HowWeWork from "@/Components/HowWeWork";
 
-import Our_services from "@/Components/Our_services";
+
 import ServicesSection from "@/Components/ServicesSection";
 
 import StatsSection from "@/Components/StatsSection";
+import WhyChooseUs from "@/Components/whayChoseUs";
 
 export default function Home() {
   return (
@@ -23,6 +25,8 @@ export default function Home() {
         <StatsSection/>
         {/* <Our_services/> */}
         <ServicesSection/>
+        <WhyChooseUs/>
+        <HowWeWork/>
     
  
 </main>

@@ -53,13 +53,10 @@ function HeroSection() {
   {/* Heading */}
 
 
-
-
-
-
   <div>
     <LayoutTextFlip
       text="We Deliver"
+     
       words={[
         "High-Performing Websites",
         "Scalable-Digital-Brands",
