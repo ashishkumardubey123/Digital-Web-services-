@@ -55,7 +55,7 @@ const GoogleIcon = () => (
 
 const TestimonialSection: React.FC = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    <section className="pb-9 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       
       {/* Header aligned with reference design */}
       <div className="max-w-7xl mx-auto px-4 text-center mb-16">
