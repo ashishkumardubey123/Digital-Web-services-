@@ -1,16 +1,17 @@
 
 
-import ContactSection from "@/Components/ContactSection";
-import FAQSection from "@/Components/FAQSection";
-import Herosection from "@/Components/HeroSection";
-import HowWeWork from "@/Components/HowWeWork";
+// import ContactSection from "@/Components/ContactSection";
+// import FAQSection from "@/Components/FAQSection";
+// import Herosection from "@/Components/HeroSection";
+// import HowWeWork from "@/Components/HowWeWork";
 
 
-import ServicesSection from "@/Components/ServicesSection";
+// import ServicesSection from "@/Components/ServicesSection";
 
-import StatsSection from "@/Components/StatsSection";
-import TestimonialSection from "@/Components/TestimonialSection";
-import WhyChooseUs from "@/Components/whayChoseUs";
+// import StatsSection from "@/Components/StatsSection";
+// import TestimonialSection from "@/Components/TestimonialSection";
+// import WhyChooseUs from "@/Components/whayChoseUs";
+import Homepage from "./pages/Homepage";
 
 export default function Home() {
   return (
@@ -24,16 +25,17 @@ export default function Home() {
   }}
 >
   
-        <Herosection/>
-        <StatsSection/>
+       {/* <Herosection/> */}
+        {/* <StatsSection/> */}
         {/* <Our_services/> */}
-        <ServicesSection/>
+        {/* <ServicesSection/>
         <WhyChooseUs/>
         <HowWeWork/>
         <TestimonialSection/>
         <FAQSection/>
         <ContactSection/>
-    
+     */}
+      <Homepage/>
  
 </main>
     

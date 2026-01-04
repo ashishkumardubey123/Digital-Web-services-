@@ -43,10 +43,10 @@ function HeroSection() {
     className="inline-flex items-center rounded-full p-1 border border-slate-400 text-sm font-medium duration-150 hover:bg-slate-200"
   >
     <span className="inline-block rounded-full px-3 py-1 bg-indigo-600 text-base text-white">
-      Digital Web Services
+      Digi-WebX
     </span>
     <p className="flex items-center">
-      <ChevronRight size={30} strokeWidth={2.5} absoluteStrokeWidth />
+      <ChevronRight size={25} strokeWidth={2.0} absoluteStrokeWidth />
     </p>
   </Link>
 

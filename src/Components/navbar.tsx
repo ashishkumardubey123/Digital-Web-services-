@@ -66,7 +66,7 @@ const Navbar = () => {
              
               className="w-14 rounded-full w-50 h-13 shadow-md"
             />
-            <span className="font-satoshi text-sm font-bold "> Digital Web-Services </span>
+            <span className="font-satoshi text-sm font-bold "> Digi-WebX </span>
           </Link>
 
           {/* CENTER — MENU */}
