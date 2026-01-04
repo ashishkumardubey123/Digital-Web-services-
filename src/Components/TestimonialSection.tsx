@@ -77,7 +77,7 @@ const TestimonialSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-4"
+          className="text-2xl md:text-5xl font-bold text-gray-900 tracking-tight mb-4"
         >
         Clients Say About Their Experience With Us
         </motion.h2>

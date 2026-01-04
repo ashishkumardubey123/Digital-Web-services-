@@ -100,7 +100,7 @@ const FAQSection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="mt-2 text-3xl md:text-4xl font-bold text-gray-900"
+            className="mt-2 text-2xl md:text-4xl font-bold text-gray-900"
           >
             Frequently Asked Questions
           </motion.h2>
