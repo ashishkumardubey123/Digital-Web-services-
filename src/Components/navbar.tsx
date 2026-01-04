@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { EnhancedButton } from './ui/EnhancedButton';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -95,20 +96,8 @@ const Navbar = () => {
 
           {/* RIGHT — CTA BUTTON */}
           <div className="hidden md:block">
-            <a
-              href="tel:9302300834"
-              className="
-                relative overflow-hidden
-                px-5 py-2 rounded-full text-white font-medium
-                bg-purple-600
-                transition-all duration-300
-                hover:scale-[1.06]
-                hover:shadow-[0_0_25px_rgba(168,85,247,0.7)]
-              "
-            >
-              <span className="relative z-10">📞 9302300834</span>
-              <span className="absolute inset-0 bg-gradient-to-r from-purple-500 to-fuchsia-500 opacity-0 hover:opacity-100 transition-opacity duration-300" />
-            </a>
+            {/* Using the new 'cta' variant which is much stronger */}
+            <EnhancedButton phoneNumber="9302300834" variant="cta" />
           </div>
 
           {/* MOBILE BUTTON */}

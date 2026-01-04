@@ -1,5 +1,7 @@
 
 
+import ContactSection from "@/Components/ContactSection";
+import FAQSection from "@/Components/FAQSection";
 import Herosection from "@/Components/HeroSection";
 import HowWeWork from "@/Components/HowWeWork";
 
@@ -7,6 +9,7 @@ import HowWeWork from "@/Components/HowWeWork";
 import ServicesSection from "@/Components/ServicesSection";
 
 import StatsSection from "@/Components/StatsSection";
+import TestimonialSection from "@/Components/TestimonialSection";
 import WhyChooseUs from "@/Components/whayChoseUs";
 
 export default function Home() {
@@ -26,7 +29,10 @@ export default function Home() {
         {/* <Our_services/> */}
         <ServicesSection/>
         <WhyChooseUs/>
+        <TestimonialSection/>
         <HowWeWork/>
+        <FAQSection/>
+        <ContactSection/>
     
  
 </main>

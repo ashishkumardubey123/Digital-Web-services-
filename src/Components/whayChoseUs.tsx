@@ -4,60 +4,62 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Reason } from "@/app/types";
 import {
-  Users,
-  Zap,
+  Code2,
   Search,
-  Briefcase,
+  Zap,
+  TrendingUp,
   ShieldCheck,
   Headphones,
 } from "lucide-react";
+ 
 
 
 // Sample Data
 const reasons: Reason[] = [
   {
-    title: "Expert Development Team",
-    desc: "Our skilled developers craft clean, scalable, and high-performance websites using modern technologies.",
-    stat: "50+",
-    statLabel: "Experts",
-    icon: Users,
+    title: "Full-Stack Web Development",
+    desc: "We design and develop fast, scalable, and modern websites tailored to your business goals.",
+    stat: "100+",
+    statLabel: "Websites Built",
+    icon: Code2,
   },
   {
-    title: "High-Performance Websites",
-    desc: "We build lightning-fast websites optimized for speed, performance, and smooth user experience.",
-    stat: "95+",
+    title: "SEO-Focused Development",
+    desc: "Our websites are built with SEO-first architecture to improve visibility and organic growth.",
+    stat: "3x",
+    statLabel: "Organic Growth",
+    icon: Search,
+  },
+  {
+    title: "Performance & Speed Optimized",
+    desc: "We optimize websites for speed, performance, and smooth user experience across all devices.",
+    stat: "90+",
     statLabel: "PageSpeed Score",
     icon: Zap,
   },
   {
-    title: "SEO-Driven Architecture",
-    desc: "Every project is structured with SEO best practices to boost visibility and long-term rankings.",
-    stat: "3x",
-    statLabel: "Traffic Growth",
-    icon: Search,
-  },
-  {
-    title: "Proven Project Delivery",
-    desc: "Successfully delivered websites and digital solutions across multiple industries worldwide.",
-    stat: "120+",
-    statLabel: "Projects Delivered",
-    icon: Briefcase,
+    title: "Digital Marketing & Growth",
+    desc: "We help businesses generate leads and conversions through strategic digital marketing solutions.",
+    stat: "2x",
+    statLabel: "Lead Conversion",
+    icon: TrendingUp,
   },
   {
     title: "Secure & Reliable Systems",
-    desc: "We follow modern security standards to keep your data, users, and business protected.",
+    desc: "We follow best security practices to ensure data safety, stability, and long-term reliability.",
     stat: "99.9%",
     statLabel: "Uptime",
     icon: ShieldCheck,
   },
   {
-    title: "Long-Term Client Support",
-    desc: "From launch to growth, we provide continuous support and optimization for lasting success.",
+    title: "Ongoing Support & Optimization",
+    desc: "We provide continuous support, updates, and optimization to help your business scale confidently.",
     stat: "5+",
     statLabel: "Years Experience",
     icon: Headphones,
   },
 ];
+
 
 export default function WhyChooseUs() {
   return (
