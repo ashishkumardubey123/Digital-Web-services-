@@ -59,7 +59,7 @@ function HeroSection() {
      
       words={[
         "High-Performing Websites",
-        "Scalable-Digital-Brands",
+        
         "Result-Driven Experiences",
         "Growth-Focused Solutions",
       ]}

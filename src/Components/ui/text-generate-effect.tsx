@@ -38,7 +38,8 @@ export const TextGenerateEffect = ({
       <div className="mt-4">
         <motion.div
           ref={scope}
-          className="text-lg leading-snug tracking-wide dark:text-white text-gray-700"
+          className="text-base flex flex-wrap justify-center md:justify-start leading-snug tracking-wide dark:text-white text-gray-700"
+
         >
           {wordsArray.map((word, idx) => (
             <motion.span

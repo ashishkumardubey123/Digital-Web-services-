@@ -1,7 +1,9 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Send, Phone, Mail, Clock, MessageCircle, MapPin, ArrowRight } from 'lucide-react';
+import { Send, Phone, Mail, Clock, MessageSquare, MessageCircle, MapPin, ArrowRight, Twitter, Linkedin, Instagram, Github } 
+from 'lucide-react';
+
 
 const ContactSection: React.FC = () => {
   return (
@@ -139,18 +141,18 @@ const ContactSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="lg:col-span-5 lg:pl-6 flex flex-col justify-center h-full space-y-8 md:space-y-10"
           >
-            <div className="text-center lg:text-left">
+            {/* <div className="text-center lg:text-left">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">Let's build together.</h3>
               <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                 We are currently operating online. Our remote team is ready to serve you globally.
               </p>
-            </div>
+            </div> */}
 
             {/* Grid Layout: 2 Columns on Mobile, 1 on Large Screens */}
-            <div className="grid grid-cols-2 lg:grid-cols-1 gap-3 md:gap-6">
+            {/* <div className="grid grid-cols-2 lg:grid-cols-1 gap-3 md:gap-6"> */}
               
               {/* Info Card: Phone */}
-              <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left p-4 md:p-5 rounded-2xl md:rounded-3xl bg-white border border-purple-50 shadow-sm hover:shadow-md transition-shadow group">
+              {/* <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left p-4 md:p-5 rounded-2xl md:rounded-3xl bg-white border border-purple-50 shadow-sm hover:shadow-md transition-shadow group">
                 <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-500 to-indigo-600 text-white flex items-center justify-center flex-shrink-0 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-300 mb-3 sm:mb-0">
                   <Phone className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
@@ -160,10 +162,10 @@ const ContactSection: React.FC = () => {
                     +91 9302300834
                   </a>
                 </div>
-              </div>
+              </div> */}
 
               {/* Info Card: Email */}
-              <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left p-4 md:p-5 rounded-2xl md:rounded-3xl bg-white border border-purple-50 shadow-sm hover:shadow-md transition-shadow group">
+              {/* <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left p-4 md:p-5 rounded-2xl md:rounded-3xl bg-white border border-purple-50 shadow-sm hover:shadow-md transition-shadow group">
                 <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-600 text-white flex items-center justify-center flex-shrink-0 shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform duration-300 mb-3 sm:mb-0">
                   <Mail className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
@@ -173,10 +175,10 @@ const ContactSection: React.FC = () => {
                     ad201054@gmail.com
                   </a>
                 </div>
-              </div>
+              </div> */}
 
               {/* Info Card: Hours */}
-              <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left p-4 md:p-5 rounded-2xl md:rounded-3xl bg-white border border-purple-50 shadow-sm hover:shadow-md transition-shadow group">
+              {/* <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left p-4 md:p-5 rounded-2xl md:rounded-3xl bg-white border border-purple-50 shadow-sm hover:shadow-md transition-shadow group">
                 <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-gradient-to-br from-pink-500 to-rose-500 text-white flex items-center justify-center flex-shrink-0 shadow-lg shadow-pink-500/30 group-hover:scale-110 transition-transform duration-300 mb-3 sm:mb-0">
                   <Clock className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
@@ -186,10 +188,10 @@ const ContactSection: React.FC = () => {
                     Mon - Sat: 10 - 7
                   </p>
                 </div>
-              </div>
+              </div> */}
               
               {/* Info Card: Location */}
-              <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left p-4 md:p-5 rounded-2xl md:rounded-3xl bg-white border border-purple-50 shadow-sm hover:shadow-md transition-shadow group">
+              {/* <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left p-4 md:p-5 rounded-2xl md:rounded-3xl bg-white border border-purple-50 shadow-sm hover:shadow-md transition-shadow group">
                 <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-gradient-to-br from-cyan-500 to-teal-500 text-white flex items-center justify-center flex-shrink-0 shadow-lg shadow-cyan-500/30 group-hover:scale-110 transition-transform duration-300 mb-3 sm:mb-0">
                   <MapPin className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
@@ -199,9 +201,88 @@ const ContactSection: React.FC = () => {
                     Online / Remote
                   </p>
                 </div>
-              </div>
+              </div> */}
 
+            {/* </div> */}
+
+
+
+             <div className="space-y-8 h-full flex flex-col justify-center py-4">
+      <div>
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
+        Let's build  <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+            Together.
+          </span>
+        </h2>
+        <p className="text-lg text-gray-600 mb-10 max-w-md leading-relaxed">
+          Questions? Ideas? Partnership opportunities? We are here to listen and provide the answers you need.
+        </p>
+
+        <div className="space-y-5">
+          <a href="mailto:ad201054@gmail.com" className="block group">
+            <div className="flex items-center gap-5 p-5 rounded-[20px] bg-white/60 border border-white/80 shadow-sm hover:bg-white hover:shadow-xl hover:shadow-purple-500/10 hover:-translate-y-1 transition-all duration-300 backdrop-blur-md">
+              <div className="w-12 h-12 rounded-2xl bg-purple-100 flex items-center justify-center text-purple-600 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
+                <Mail className="w-6 h-6" />
+              </div>
+              <div className="flex-1">
+                <h4 className="font-bold text-gray-900 mb-0.5 text-lg">Email Us</h4>
+                <p className="text-gray-500 group-hover:text-purple-600 transition-colors">ad201054@gmail.com</p>
+              </div>
+              <ArrowRight className="w-5 h-5 text-gray-300 group-hover:text-purple-500 group-hover:translate-x-1 transition-all" />
             </div>
+          </a>
+
+          <a href="tel:9302300834" className="block group">
+            <div className="flex items-center gap-5 p-5 rounded-[20px] bg-white/60 border border-white/80 shadow-sm hover:bg-white hover:shadow-xl hover:shadow-purple-500/10 hover:-translate-y-1 transition-all duration-300 backdrop-blur-md">
+              <div className="w-12 h-12 rounded-2xl bg-pink-100 flex items-center justify-center text-pink-600 group-hover:scale-110 group-hover:bg-pink-600 group-hover:text-white transition-all duration-300">
+                <Phone className="w-6 h-6" />
+              </div>
+              <div className="flex-1">
+                <h4 className="font-bold text-gray-900 mb-0.5 text-lg">Call Us</h4>
+                <p className="text-gray-500 group-hover:text-pink-600 transition-colors">9302300834</p>
+              </div>
+              <ArrowRight className="w-5 h-5 text-gray-300 group-hover:text-pink-500 group-hover:translate-x-1 transition-all" />
+            </div>
+          </a>
+          
+                 <div className="block group cursor-default">
+            <div className="flex items-center gap-5 p-5 rounded-[20px] bg-white/60 border border-white/80 shadow-sm hover:bg-white hover:shadow-xl hover:shadow-purple-500/10 hover:-translate-y-1 transition-all duration-300 backdrop-blur-md">
+              <div className="w-12 h-12 rounded-2xl bg-indigo-100 flex items-center justify-center text-indigo-600 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                <Clock className="w-6 h-6" />
+              </div>
+              <div className="flex-1">
+                <h4 className="font-bold text-gray-900 mb-0.5 text-lg">Business Hours</h4>
+                <p className="text-gray-500 group-hover:text-indigo-600 transition-colors">Monday -Saturday: 10:00AM - 7:00PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-10 pt-8 border-t mx-auto  border-purple-100/50">
+        <h4 className="font-semibold   text-gray-900 mb-5 ml-1">Follow our journey</h4>
+        <div className="flex gap-4">
+          {[
+            { Icon: Twitter, href: "#", color: "hover:bg-blue-400" },
+            { Icon: Linkedin, href: "#", color: "hover:bg-blue-700" },
+            { Icon: Instagram, href: "#", color: "hover:bg-pink-600" },
+            { Icon: Github, href: "#", color: "hover:bg-gray-900" }
+          ].map(({ Icon, href, color }, index) => (
+            <a 
+              key={index}
+              href={href} 
+              className={`w-12 h-12 rounded-2xl bg-white border border-gray-100 flex items-center justify-center text-gray-400 hover:text-white ${color} hover:border-transparent hover:shadow-lg hover:-translate-y-1 transition-all duration-300`}
+            >
+              <Icon className="w-5 h-5" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+
+
           </motion.div>
 
         </div>

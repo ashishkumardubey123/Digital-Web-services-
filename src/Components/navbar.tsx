@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { EnhancedButton } from './ui/EnhancedButton';
@@ -30,7 +31,8 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "Service", path: "/service" },
     { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact", path: "/contact" }, // ✅ lowercase
+
   ];
 
   return (
@@ -59,14 +61,17 @@ const Navbar = () => {
       <div className="px-4 mx-auto lg:max-w-7xl md:px-8">
         <div className="relative flex items-center justify-between h-16">
           {/* LEFT — LOGO */}
-          <Link href="/" className="flex gap-1 items-center">
-            <img
-              src=".\Nav-logo.png"
+          <Link href="/" className="flex gap-1  items-center">
+            <Image
+             className=" object-contain  rounded-full"
+              src="/Nav-logo.png"
               alt="logo"
-             
-              className="w-14 rounded-full w-50 h-13 shadow-md"
+              width={80}
+              height={50}
+         
+              
             />
-            <span className="font-satoshi text-sm font-bold "> Digi-WebX </span>
+            <span className="font-satoshi  text-lg font-bold text-purple-950 "> Digi-WebX </span>
           </Link>
 
           {/* CENTER — MENU */}
