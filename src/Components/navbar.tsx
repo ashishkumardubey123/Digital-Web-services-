@@ -29,8 +29,8 @@ const Navbar = () => {
 
   const menu = [
     { name: "Home", path: "/" },
-    { name: "Service", path: "/service" },
-    { name: "About", path: "/about" },
+    { name: "Service", path: "/Services" },
+    { name: "About", path: "/About" },
     { name: "Contact", path: "/contact" }, // ✅ lowercase
 
   ];

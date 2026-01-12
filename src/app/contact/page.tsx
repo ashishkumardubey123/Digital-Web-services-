@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Send, Loader2, Phone, MessageCircle, Mail, Clock, Twitter, Linkedin, Instagram, Github, ArrowRight, User, FileText, HelpCircle, MessageSquare } from 'lucide-react';
+import { Send, Loader2, Phone, MessageCircle, Mail, Clock, Twitter, Linkedin, Instagram, Github, ArrowRight, User, FileText, HelpCircle, MessageSquare, PhoneCallIcon } from 'lucide-react';
+import { IconBrandWhatsappFilled } from '@tabler/icons-react';
 
 // --- Types ---
 
@@ -284,14 +285,14 @@ const ContactForm = () => {
                 rel="noopener noreferrer" 
                 className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl bg-white border border-gray-200 text-gray-600 hover:border-green-500 hover:text-green-600 hover:bg-green-50 hover:shadow-lg hover:shadow-green-500/10 hover:-translate-y-0.5 transition-all duration-300 group"
               >
-                <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                <IconBrandWhatsappFilled className="w-5 h-5 group-hover:scale-110 transition-transform color=[rgba(0,104,76,1)] duration-300" />
                 <span className="font-semibold">WhatsApp</span>
               </a>
               <a 
                 href="tel:9302300834" 
                 className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl bg-white border border-gray-200 text-gray-600 hover:border-purple-500 hover:text-purple-600 hover:bg-purple-50 hover:shadow-lg hover:shadow-purple-500/10 hover:-translate-y-0.5 transition-all duration-300 group"
               >
-                <Phone className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                <PhoneCallIcon className="w-5 h-5 color=[rgba(108,38,113,1)] group-hover:scale-110 transition-transform duration-300" />
                 <span className="font-semibold">Call Us</span>
               </a>
             </div>
@@ -383,11 +384,11 @@ const ContactInfo = () => {
 export default function App() {
   return (
     <Layout>
-      <div className="max-w-7xl mx-auto min-h-[calc(100vh-160px)] flex flex-col justify-center py-8">
+      <div className="max-w-7xl mx-auto min-h-[calc(100vh-160px)] flex flex-col justify-center ">
         
         <div className="text-center mb-16 md:mb-20 pt-8 animate-fade-in-up">
             {/* Badge styled like the image: White bg, purple text, soft border */}
-            <div className="inline-block py-2 px-6 rounded-full bg-white text-purple-700 font-semibold mb-8 border border-purple-100 shadow-[0_2px_10px_rgba(124,58,237,0.1)] hover:shadow-[0_4px_15px_rgba(124,58,237,0.15)] transition-all duration-300">
+            <div className="inline-block px-6 rounded-full bg-white text-purple-700 font-semibold mb-8 border border-purple-100 shadow-[0_2px_10px_rgba(124,58,237,0.1)] hover:shadow-[0_4px_15px_rgba(124,58,237,0.15)] transition-all duration-300">
                 Contact Us
             </div>
             

@@ -23,6 +23,9 @@
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-element-to-jsx-string": "^17.0.1",
+    "react-router-dom": "^7.12.0",
+    "react-snowfall": "^2.4.0",
+    "remixicon": "^4.8.0",
     "tailwind-merge": "^3.4.0",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.182.0"
