@@ -157,7 +157,10 @@ text-white backdrop-blur-sm"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.98 }}
     >
-      Know More
+      <Link href="/Services">
+          Know More 
+      </Link>
+  
       <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
     </motion.button>
   </div>
@@ -175,7 +178,7 @@ text-white backdrop-blur-sm"
         transition={{ duration: 0.6, delay: 0.4 }}
         viewport={{ once: true }}
       >
-        <Link href="#all-services">
+        <Link href="/Services">
           <Button
             size="lg"
             className="relative px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-blue-950 font-bold rounded-lg transition-all duration-300 group overflow-hidden shadow-lg hover:shadow-cyan-500/50"
