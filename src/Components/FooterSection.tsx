@@ -57,13 +57,13 @@ const FooterSection = () => {
                 "Content Strategy",
               ].map((item) => (
                 <li key={item}>
-                  <a
-                    href="#"
+                  <Link
+                    href="/Services"
                     className="flex items-center group hover:text-purple-400 transition-colors text-sm"
                   >
                     <span className="w-0 group-hover:w-2 h-[2px] bg-purple-500 mr-0 group-hover:mr-2 transition-all duration-300"></span>
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -83,10 +83,10 @@ const FooterSection = () => {
                              <Link href="/Services" className="hover:text-purple-400 transition-colors text-sm">services</Link>
                         </li>
                         <li>
-                             <Link href="/Contact" className="hover:text-purple-400 transition-colors text-sm">Contact</Link>
+                             <Link href="/contact" className="hover:text-purple-400 transition-colors text-sm">Contact</Link>
                         </li>
                          <li>
-                             <Link href="/Portfolio" className="hover:text-purple-400 transition-colors text-sm">Portfolio</Link>
+                             <Link href="#" className="hover:text-purple-400 transition-colors text-sm">Portfolio</Link>
                         </li>
                     </ul>
                 </div>

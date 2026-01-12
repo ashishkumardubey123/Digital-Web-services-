@@ -4,6 +4,9 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { EnhancedButton } from './ui/EnhancedButton';
+import MobileBottomContactBar from "./MobileContactButtons";
+import { MessageCircle, Phone, PhoneCallIcon, TextAlignEnd, TextAlignJustify } from "lucide-react";
+import { IconBrandWhatsappFilled } from "@tabler/icons-react";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -109,52 +112,87 @@ const Navbar = () => {
           <div className="md:hidden">
             <button onClick={() => setNavbar(!navbar)}>
               {navbar ? (
-                <img src="/close.svg" width={30} height={30} alt="close" />
+           <TextAlignEnd color="#8b0d9c" />
               ) : (
-                <img
-                  src="/hamburger-menu.svg"
-                  width={30}
-                  height={30}
-                  alt="menu"
-                />
+              <TextAlignJustify color="#8b0d9c" />
               )}
             </button>
           </div>
         </div>
 
         {/* MOBILE MENU */}
-        <div
+       {/* MOBILE MENU */}
+<div
+  className={`
+    md:hidden overflow-hidden transition-all duration-500 ease-out
+    ${navbar ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}
+  `}
+>
+  <ul className="mt-4 flex flex-col gap-4 bg-black/90 backdrop-blur-xl p-6 rounded-xl shadow-lg">
+    {menu.map((item) => (
+      <Link
+        key={item.name}
+        href={item.path}
+        onClick={() => setNavbar(false)}
+      >
+        <li
           className={`
-            md:hidden overflow-hidden transition-all duration-500 ease-out
-            ${navbar ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}
+            text-lg text-center font-medium
+            ${pathname === item.path ? "text-purple-500" : "text-white"}
           `}
         >
-          <ul className="mt-4 flex flex-col gap-4 bg-black/90 backdrop-blur-xl p-6 rounded-xl shadow-lg">
-            {menu.map((item) => (
-              <Link
-                key={item.name}
-                href={item.path}
-                onClick={() => setNavbar(false)}
-              >
-                <li
-                  className={`
-                    text-lg text-center font-medium
-                    ${pathname === item.path ? "text-purple-500" : "text-white"}
-                  `}
-                >
-                  {item.name}
-                </li>
-              </Link>
-            ))}
+          {item.name}
+        </li>
+      </Link>
+    ))}
 
-            <a
-              href="tel:9302300834"
-              className="mt-3 text-center bg-purple-600 text-white py-2 rounded-full"
-            >
-              📞 9302300834
-            </a>
-          </ul>
-        </div>
+    {/* 🔻 MOBILE CONTACT BUTTONS */}
+    <div className="mt-6 pt-6 border-t border-white/20">
+      <p className="text-center text-gray-300 text-sm mb-4 font-medium">
+        Or connect with us instantly
+      </p>
+
+      <div className="grid grid-cols-2 gap-4">
+        {/* 💬 WhatsApp */}
+        <a
+          href="https://wa.me/9302300834"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => setNavbar(false)}
+          className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl
+                     bg-white border border-gray-200
+                     text-gray-700 font-semibold
+                     hover:border-green-500 hover:text-green-600
+                     hover:bg-green-50
+                     hover:shadow-lg hover:shadow-green-500/10
+                     hover:-translate-y-0.5
+                     transition-all duration-300 group"
+        >
+        <IconBrandWhatsappFilled className="w-5 h-5 group-hover:scale-110 transition-transform color=[rgba(0,104,76,1)] duration-300" />
+          <span>WhatsApp</span>
+        </a>
+
+        {/* 📞 Call */}
+        <a
+          href="tel:9302300834"
+          onClick={() => setNavbar(false)}
+          className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl
+                     bg-white border border-gray-200
+                     text-gray-700 font-semibold
+                     hover:border-purple-500 hover:text-purple-600
+                     hover:bg-purple-50
+                     hover:shadow-lg hover:shadow-purple-500/10
+                     hover:-translate-y-0.5
+                     transition-all duration-300 group"
+        >
+           <PhoneCallIcon className="w-5 h-5 color=[rgba(108,38,113,1)] group-hover:scale-110 transition-transform duration-300" />
+          <span>Call Us</span>
+        </a>
+      </div>
+    </div>
+  </ul>
+</div>
+
       </div>
     </nav>
   );
