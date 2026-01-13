@@ -146,6 +146,7 @@ text-white backdrop-blur-sm"
     </ul>
 
     {/* Button */}
+         <Link href="/Services">
     <motion.button
       className="w-full py-3 px-4 rounded-lg
       bg-gradient-to-r from-blue-500 to-cyan-500
@@ -157,12 +158,13 @@ text-white backdrop-blur-sm"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.98 }}
     >
-      <Link href="/Services">
+ 
           Know More 
-      </Link>
+   
   
       <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
     </motion.button>
+       </Link>
   </div>
 </motion.div>
 
