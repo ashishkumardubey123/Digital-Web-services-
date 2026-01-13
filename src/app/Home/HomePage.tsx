@@ -1,5 +1,6 @@
 import React from 'react'
-import ContactSection from "@/Components/ContactSection";
+import ContactSection from '@/app/contact/page';
+
 import FAQSection from "@/Components/FAQSection";
 import Herosection from "@/Components/HeroSection";
 import HowWeWork from "@/Components/HowWeWork";
@@ -22,7 +23,7 @@ function Homepage() {
         <HowWeWork/>
         <TestimonialSection/>
         <FAQSection/>
-        <ContactSection/>
+      <ContactSection/>
     </div>
   )
 }

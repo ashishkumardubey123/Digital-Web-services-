@@ -1,4 +1,5 @@
 'use client';
+import { motion } from 'framer-motion';
 
 import React, { useState } from 'react';
 import { Send, Loader2, Phone, MessageCircle, Mail, Clock, Twitter, Linkedin, Instagram, Github, ArrowRight, User, FileText, HelpCircle, MessageSquare, PhoneCallIcon } from 'lucide-react';
@@ -223,10 +224,10 @@ const ContactForm = () => {
                   className="w-full pl-12 pr-10 py-4 rounded-2xl bg-gray-50/50 border border-gray-200 focus:bg-white focus:border-purple-500 focus:ring-4 focus:ring-purple-500/10 outline-none transition-all duration-300 text-gray-700 font-medium appearance-none cursor-pointer"
                 >
                   <option value="" disabled>Select a topic</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="support">Technical Support</option>
-                  <option value="sales">Sales & Partnerships</option>
-                  <option value="billing">Billing Question</option>
+                  <option value="general">Web-Development</option>
+                  <option value="support">SEO</option>
+                  <option value="sales">Marketing</option>
+                  <option value="billing">Other</option>
                 </select>
                 <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
@@ -388,9 +389,26 @@ export default function App() {
         
         <div className="text-center mb-16 md:mb-20 pt-8 animate-fade-in-up">
             {/* Badge styled like the image: White bg, purple text, soft border */}
-            <div className="inline-block px-6 rounded-full bg-white text-purple-700 font-semibold mb-8 border border-purple-100 shadow-[0_2px_10px_rgba(124,58,237,0.1)] hover:shadow-[0_4px_15px_rgba(124,58,237,0.15)] transition-all duration-300">
+            {/* <div className="inline-block px-6 rounded-full bg-white text-purple-700 font-semibold mb-8 border border-purple-100 shadow-[0_2px_10px_rgba(124,58,237,0.1)] hover:shadow-[0_4px_15px_rgba(124,58,237,0.15)] transition-all duration-300">
                 Contact Us
-            </div>
+            </div> */}
+
+  <div className="text-center mb-10 md:mb-16 lg:mb-2">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 border border-purple-100 text-purple-700 text-sm font-semibold tracking-wide shadow-sm mb-6"
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+            </span>
+            Get In Touch
+          </motion.div>
+          
+        </div>
+
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
                 Let's Craft the <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-purple-600 to-pink-500">Future</span>
