@@ -27,7 +27,7 @@ const services = [
 function ServicesSection() {
   return (
     <section
-      className="min-h-screen py-12 mt-14 bg-gradient-to-b from-blue-950 to-blue-900  font-satoshi antialiased bg-grid-white/[0.02] py-20"
+      className="min-h-screen py-12 mt-14 bg-gradient-to-b from-blue-950 to-blue-900  font-satoshi antialiased bg-grid-white/[0.02] "
       
     >
       {/* Heading */}
