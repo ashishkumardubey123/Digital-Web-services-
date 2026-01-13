@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  title: "Digi-WebX Services",
+  title: "Digi-WebX",
   description: "We are one of the leading digital services provider, offering web development, SEO, and social media marketing to help your business thrive online.",
   icons: {
     icon: "./fav-icon.png",
