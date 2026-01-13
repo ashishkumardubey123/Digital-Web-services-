@@ -18,9 +18,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
+
 export const metadata: Metadata = {
   title: "Digital Web Services",
   description: "We are one of the leading digital service providers",
+  icons: {
+    icon: "./fav-icon.png",
+  
+  },
 };
 
 export default function RootLayout({
