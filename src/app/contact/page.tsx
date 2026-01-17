@@ -338,19 +338,72 @@ const ContactForm = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 hover:from-purple-500 hover:via-violet-500 hover:to-indigo-500 text-white font-bold text-lg shadow-xl shadow-purple-500/20 transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none active:scale-[0.98]"
+                className="
+    relative bottom-0 w-full
+    flex justify-center items-center gap-2
+    border border-black rounded-xl
+    text-white font-black bg-black uppercase
+    px-8 py-4 z-10 overflow-hidden
+    transition-all duration-700 ease-in-out
+    group hover:text-black hover:bg-white
+    active:scale-95 active:duration-0
+    focus:bg-white focus:text-black
+    disabled:opacity-70 disabled:cursor-not-allowed
+    isolation-auto
+    before:absolute before:w-full before:transition-all before:duration-700
+    before:-left-full before:hover:left-0 before:rounded-full
+    before:bg-white before:-z-10 before:aspect-square
+    before:hover:scale-150 before:hover:duration-700
+  "
               >
-                {isSubmitting ? (
-                  <>
-                    <Loader2 className="w-5 h-5 animate-spin" />
-                    <span>Sending...</span>
-                  </>
-                ) : (
-                  <>
-                    <span>Send Message</span>
-                    <Send className="w-5 h-5" />
-                  </>
-                )}
+                {/* Default Text */}
+                <span
+                  className={`
+      truncate transition-all duration-300
+      ${
+        isSubmitting
+          ? "-translate-x-96"
+          : "group-active:-translate-x-96 group-focus:translate-x-96"
+      }
+    `}
+                >
+                  Send Message
+                </span>
+
+                {/* Processing Animation (unchanged) */}
+                <div
+                  className={`
+      absolute flex flex-row justify-center items-center gap-2
+      transition-all duration-300
+      ${
+        isSubmitting
+          ? "translate-x-0"
+          : "-translate-x-96 group-active:translate-x-0 group-focus:translate-x-0"
+      }
+    `}
+                >
+                  <div className="animate-spin size-4 border-2 border-black border-t-transparent rounded-full"></div>
+                  Processing...
+                </div>
+
+                {/* Send Icon */}
+                <svg
+                  className={`
+      fill-white transition-all duration-700 ease-in-out
+      group-hover:fill-black
+      ${
+        isSubmitting
+          ? "translate-x-96"
+          : "group-active:translate-x-96 group-focus:translate-x-96"
+      }
+    `}
+                  viewBox="0 0 512 512"
+                  height="16"
+                  width="16"
+                  aria-hidden="true"
+                >
+                  <path d="m476.59 227.05-.16-.07L49.35 49.84A23.56 23.56 0 0 0 27.14 52 24.65 24.65 0 0 0 16 72.59v113.29a24 24 0 0 0 19.52 23.57l232.93 43.07a4 4 0 0 1 0 7.86L35.53 303.45A24 24 0 0 0 16 327v113.31A23.57 23.57 0 0 0 26.59 460a23.94 23.94 0 0 0 13.22 4 24.55 24.55 0 0 0 9.52-1.93L476.4 285.94l.19-.09a32 32 0 0 0 0-58.8z" />
+                </svg>
               </button>
             </div>
           </form>
@@ -401,7 +454,7 @@ const ContactForm = () => {
           </div>
           {/* for mobile screen buttons   */}
 
-           <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-t border-gray-200 px-4 pt-4 pb-5">
+          <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-t border-gray-200 px-4 pt-4 pb-5">
             <p className="text-center text-gray-500 text-sm mb-4 font-medium">
               connect with us instantly
             </p>
@@ -443,8 +496,6 @@ const ContactForm = () => {
               </a>
             </div>
           </div>
-
-         
         </>
       )}
     </div>
