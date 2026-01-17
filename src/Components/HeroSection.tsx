@@ -73,53 +73,52 @@ function HeroSection() {
 
   {/* Buttons */}
  {/* Buttons */}
-  <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-x-4">
- <Link href="/services">
-      <HoverBorderGradient
-        containerClassName="rounded-full"
-        as="button"
-        className="
-          flex items-center justify-center gap-x-1
-          px-4 py-2
-          text-sm sm:text-base
-          text-white font-medium
-          bg-gray-800
-          hover:bg-gray-700
-          active:bg-gray-900
-          rounded-full
-          transition
-        "
-      >
-        <span>Get Started</span>
-        <ChevronRight size={18} strokeWidth={2.5} absoluteStrokeWidth />
-      </HoverBorderGradient>
-    </Link>
+  <div className="flex flex-wrap items-center  justify-center sm:justify-start gap-4 sm:gap-x-9">
+<Link href="/Services">
+  <button className="uiverse-btn flex items-center gap-x-1">
+    <span className=" font-bold ">Get Started</span>
+    <ChevronRight size={16} strokeWidth={2.5} />
+  </button>
 
-    <Link
-      href="/contact"
+
+</Link>
+
+
+<Link href="/contact">
+  <div className="relative group inline-block">
+    <button
       className="
-        flex items-center justify-center gap-x-1
-        px-4 py-2
-        text-sm sm:text-base
-        text-gray-700 hover:text-gray-900
-        font-medium
-        transition
+        relative inline-block p-px font-semibold leading-6 text-white
+        bg-gray-800 shadow-2xl cursor-pointer rounded-xl
+        shadow-zinc-900 transition-transform duration-300
+        ease-in-out hover:scale-105 active:scale-95
       "
     >
-      Contact Us
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="w-4 h-4 sm:w-5 sm:h-5"
-      >
-        <path
-          fillRule="evenodd"
-          d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-          clipRule="evenodd"
-        />
-      </svg>
-    </Link>
+      {/* Gradient Border */}
+      <span
+        className="
+          absolute inset-0 rounded-xl
+          bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500
+          p-[2px] opacity-0 transition-opacity duration-500
+          group-hover:opacity-100
+        "
+      ></span>
+
+      {/* Button Content */}
+      <span className="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
+        <span className="relative z-10 flex items-center gap-2">
+          <span className="transition-all duration-500 group-hover:translate-x-1">
+           Contact Us
+          </span>
+          <ChevronRight
+            size={22}
+            className="transition-transform duration-500 group-hover:translate-x-1"
+          />
+        </span>
+      </span>
+    </button>
+  </div>
+</Link>
   </div>
 </motion.div>
 

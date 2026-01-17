@@ -34,7 +34,7 @@ const AboutPage: React.FC = () => {
      <div className="relative pb-2 pt-20 px-4 overflow-hidden">
 
   {/* Enhanced Background Elements */}
-  <div className="absolute -top-20 right-0 w-[700px] h-[700px] bg-purple-100/60 rounded-full blur-[140px] pointer-events-none translate-x-1/3" />
+  <div className="absolute -top- right-0 w-[700px] h-[700px] bg-purple-100/60 rounded-full blur-[140px] pointer-events-none translate-x-1/3" />
   <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-indigo-100/60 rounded-full blur-[140px] pointer-events-none -translate-x-1/3 translate-y-1/4" />
   <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-white pointer-events-none" />
 
@@ -61,7 +61,7 @@ const AboutPage: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: 0.1 }}
-      className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-8 tracking-tight leading-tight"
+      className="text-3xl md:text-5xl  font-extrabold text-gray-900 mb-8 tracking-tight leading-tight"
     >
       Architects of the <br />
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600">
@@ -77,7 +77,7 @@ const AboutPage: React.FC = () => {
       transition={{ delay: 0.2 }}
       className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-14"
     >
-      DigiWebx is more than just an agency — we are your long-term digital growth partner.
+      DigiWebx is more than just an Company we are your long-term digital growth partner.
       From strategy and design to engineering and marketing, we craft digital experiences
       that help brands scale faster, connect deeper, and lead confidently.
     </motion.p>
