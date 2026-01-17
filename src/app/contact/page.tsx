@@ -21,7 +21,7 @@ import {
   PhoneCallIcon,
 } from "lucide-react";
 import { IconBrandWhatsappFilled } from "@tabler/icons-react";
-
+import { RiWhatsappFill, RiWhatsappLine } from "@remixicon/react";
 // --- Types ---
 
 interface ContactFormData {
@@ -137,8 +137,7 @@ const ContactForm = () => {
   };
 
   // Helper for staggered animation delay
-  const 
-  getDelay = (index: number) => ({
+  const getDelay = (index: number) => ({
     animationDelay: `${index * 100}ms`,
     animationFillMode: "both", // Ensures element is hidden before animation starts (if animation works), but visible otherwise.
   });
@@ -364,13 +363,12 @@ const ContactForm = () => {
               Or connect with us instantly
             </p>
             <div className="grid grid-cols-2 gap-4">
-
               {/* whatsapp */}
-               <a
-          href="https://wa.me/+919302300834"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl
+              <a
+                href="https://wa.me/+919302300834"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl
                      bg-white border border-gray-200
                   
                      hover:border-green-500 hover:text-green-600
@@ -378,11 +376,11 @@ const ContactForm = () => {
                      hover:shadow-lg hover:shadow-green-500/10
                      hover:-translate-y-0.5
                      transition-all duration-300 group"
-        >
-    <IconBrandWhatsappFilled color="rgba(0,104,76,1)" />
+              >
+                <RiWhatsappFill color="rgba(0,104,76,1)" />
 
-          <span>WhatsApp</span>
-        </a>
+                <span>WhatsApp</span>
+              </a>
               {/* phone call */}
 
               <a
@@ -402,21 +400,19 @@ const ContactForm = () => {
             </div>
           </div>
           {/* for mobile screen buttons   */}
-             
-                  <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-t border-gray-200 px-2 pt-4 pb-5">
-      
-      <p className="text-center text-gray-500 text-sm mb-4 font-medium">
-      connect with us instantly
-      </p>
 
-      <div className="grid grid-cols-2 gap-4">
-        
-        {/* 💬 WhatsApp */}
-        <a
-          href="https://wa.me/+919302300834"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl
+           <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-t border-gray-200 px-4 pt-4 pb-5">
+            <p className="text-center text-gray-500 text-sm mb-4 font-medium">
+              connect with us instantly
+            </p>
+
+            <div className="grid grid-cols-2 gap-4">
+              {/* 💬 WhatsApp */}
+              <a
+                href="https://wa.me/+919302300834"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2  py-4 rounded-2xl
                      bg-white border border-gray-200
                      text-gray-600 font-semibold
                      hover:border-green-500 hover:text-green-600
@@ -424,16 +420,16 @@ const ContactForm = () => {
                      hover:shadow-lg hover:shadow-green-500/10
                      hover:-translate-y-0.5
                      transition-all duration-300 group"
-        >
-    <IconBrandWhatsappFilled color="rgba(0,104,76,1)" />
+              >
+                <IconBrandWhatsappFilled size={25} color="rgba(0,104,76,1)" />
 
-          <span>WhatsApp</span>
-        </a>
+                <span>WhatsApp</span>
+              </a>
 
-        {/* 📞 Call */}
-        <a
-          href="tel:9302300834"
-          className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl
+              {/* 📞 Call */}
+              <a
+                href="tel:9302300834"
+                className="flex items-center justify-center gap-2  py-4 rounded-2xl
                      bg-white border border-gray-200
                      text-gray-600 font-semibold
                      hover:border-purple-500 hover:text-purple-600
@@ -441,14 +437,14 @@ const ContactForm = () => {
                      hover:shadow-lg hover:shadow-purple-500/10
                      hover:-translate-y-0.5
                      transition-all duration-300 group"
-        >
-      <PhoneCallIcon color="rgba(108,38,113,1)" />
-          <span>Call Us</span>
-        </a>
+              >
+                <PhoneCallIcon size={20} color="rgba(108,38,113,1)" />
+                <span>Call Us</span>
+              </a>
+            </div>
+          </div>
 
-      </div>
-    </div>
-
+         
         </>
       )}
     </div>
