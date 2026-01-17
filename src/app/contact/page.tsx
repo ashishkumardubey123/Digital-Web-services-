@@ -364,24 +364,23 @@ const ContactForm = () => {
             </p>
             <div className="grid grid-cols-2 gap-4">
               {/* whatsapp */}
-              <a
-                href="https://wa.me/+919302300834"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl
+               <a
+          href="https://wa.me/+919302300834"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl
                      bg-white border border-gray-200
-                     text-gray-600 font-semibold
+                  
                      hover:border-green-500 hover:text-green-600
                      hover:bg-green-50
                      hover:shadow-lg hover:shadow-green-500/10
                      hover:-translate-y-0.5
                      transition-all duration-300 group"
-              >
-                <IconBrandWhatsappFilled color="rgba(0,104,76,1)" />
+        >
+    <IconBrandWhatsappFilled color="rgba(0,104,76,1)" />
 
-                <span>WhatsApp</span>
-              </a>
-
+          <span>WhatsApp</span>
+        </a>
               {/* phone call */}
 
               <a
