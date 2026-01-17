@@ -280,31 +280,45 @@ const ContactForm = () => {
           <div className="mt-10 pt-8 border-t border-gray-100 animate-pop-in" style={getDelay(6)}>
             <p className="text-center text-gray-500 text-sm mb-6 font-medium">Or connect with us instantly</p>
             <div className="grid grid-cols-2 gap-4">
-              <a
-                  href="https://wa.me/9302300834"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setNavbar(false)}
-                  className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl
+
+               {/* whatsapp */}
+                     <a
+          href="https://wa.me/9302300834"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl
                      bg-white border border-gray-200
-                     text-gray-700 font-semibold
+                     text-gray-600 font-semibold
                      hover:border-green-500 hover:text-green-600
                      hover:bg-green-50
                      hover:shadow-lg hover:shadow-green-500/10
                      hover:-translate-y-0.5
                      transition-all duration-300 group"
-                >
-                  <IconBrandWhatsappFilled className="w-5 h-5 group-hover:scale-110 transition-transform color=[rgba(0,104,76,1)] duration-300" />
-                  <span>WhatsApp</span>
-                </a>
+        >
+    <IconBrandWhatsappFilled color="rgba(0,104,76,1)" />
 
-              <a 
-                href="tel:9302300834" 
-                className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl bg-white border border-gray-200 text-gray-600 hover:border-purple-500 hover:text-purple-600 hover:bg-purple-50 hover:shadow-lg hover:shadow-purple-500/10 hover:-translate-y-0.5 transition-all duration-300 group"
-              >
-                <PhoneCallIcon className="w-5 h-5 color=[rgba(108,38,113,1)] group-hover:scale-110 transition-transform duration-300" />
-                <span className="font-semibold">Call Us</span>
-              </a>
+          <span>WhatsApp</span>
+        </a>
+
+         {/* phone call */}
+
+         <a
+                 href="tel:9302300834"
+                 className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl
+                            bg-white border border-gray-200
+                            text-gray-600 font-semibold
+                            hover:border-purple-500 hover:text-purple-600
+                            hover:bg-purple-50
+                            hover:shadow-lg hover:shadow-purple-500/10
+                            hover:-translate-y-0.5
+                            transition-all duration-300 group"
+               >
+             <PhoneCallIcon color="rgba(108,38,113,1)" />
+                 <span>Call Us</span>
+               </a>
+       
+
+
             </div>
           </div>
         </>
