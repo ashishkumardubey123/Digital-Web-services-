@@ -188,7 +188,7 @@ const Navbar = () => {
               <div className="grid grid-cols-2 gap-4">
                 {/* 💬 WhatsApp */}
                 <a
-                  href="https://wa.me/9302300834"
+                  href="https://wa.me/+919302300834"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setNavbar(false)}
