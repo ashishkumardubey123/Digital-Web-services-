@@ -16,7 +16,7 @@ export default function MobileBottomContactBar() {
         
         {/* 💬 WhatsApp */}
         <a
-          href="https://wa.me/9302300834"
+          href="https://wa.me/+919302300834"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 px-4 py-4 rounded-2xl
